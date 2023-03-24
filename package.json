@@ -1,6 +1,7 @@
 {
 	"name": "react-intern-assignment",
 	"version": "1.0.0",
+	"proxy": "https://interview-api.onrender.com/v1",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/sobingt/react-intern-assignment"
