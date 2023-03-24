@@ -1,0 +1,58 @@
+.card-list-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.card-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 20px;
+	margin-top: 20px;
+}
+
+.cards {
+	background-color: #fff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	padding: 20px;
+	transition: all 0.3s ease-in-out;
+	position: relative;
+}
+
+.cards:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cards::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 8px;
+	border-radius: 10px 10px 0 0;
+	background-color: #2d9cdb;
+}
+
+.cards .react-credit-card__card-number {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.cards .react-credit-card__cardholder {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.cards .react-credit-card__expiry {
+	font-size: 16px;
+}
+
+.cards .react-credit-card__cvc {
+	font-size: 16px;
+}

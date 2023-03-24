@@ -1,0 +1,46 @@
+#PaymentForm {
+	width: 400px;
+	margin: auto;
+	text-align: center;
+}
+
+input[type="tel"],
+input[type="text"],
+select {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+}
+
+input[type="tel"]:focus,
+input[type="text"]:focus,
+select:focus {
+	outline: none;
+	border-color: #000;
+}
+
+select {
+	cursor: pointer;
+}
+
+button[type="submit"] {
+	display: block;
+	width: 100%;
+	margin: 10px 0;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #000;
+	color: #fff;
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #333;
+}
